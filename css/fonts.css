@@ -1,0 +1,10 @@
+/*Font face
+Önce google fonts kısmında indir ve dosyaları projeye yerleştir sonra font-face için css dosyası
+oluştur. font-family ve src fontu kullanmak için zorunlu tanımlamalardır. En son kullandığın
+css dosyana bunu import et.
+*/
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
