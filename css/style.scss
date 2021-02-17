@@ -1,0 +1,42 @@
+/*Import font-face css*/
+@import url("./fonts.css");
+
+@import 'variables';
+
+/*--------Navigation----------*/
+.header_area {
+    .main-menu {
+        .nav-item {
+            .nav-link {
+                font: normal 500 15px/2px $roboto;
+                text-transform: uppercase;
+                padding: 1.7rem;
+                color: $title-color;
+            }
+        }
+        .navbar {
+            padding: 1rem 20rem;
+
+            .navbar-nav {
+                a:hover {
+                    background: $gradient-color;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                }
+                .active {
+                    a {
+                        background: $gradient-color;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    }
+                }
+            }
+
+            &-brand {
+                padding: 0 2rem 0 5rem;
+            }
+        }
+    }
+}
