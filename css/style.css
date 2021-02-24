@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Import font-face css*/
 @import url("./fonts.css");
 html, body {
@@ -7,6 +8,79 @@ html, body {
           box-sizing: border-box;
   width: 100%;
   height: 100%;
+}
+
+.title-text {
+  font: normal bold 50px/72px "Roboto", cursive;
+}
+
+/*Buttons*/
+.button {
+  padding: .8rem 2.2rem;
+  font: normal 500 16px/20px "Roboto", cursive;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.button.primary-button {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: whitesmoke;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-transition: background .6s ease;
+  transition: background .6s ease;
+  /*Gradient border*/
+}
+
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: "";
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.button.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  -webkit-transition: background .6s ease;
+  transition: background .6s ease;
+  /*Gradient border*/
+}
+
+.button.secondary-button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  color: whitesmoke;
+}
+
+.button.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: -webkit-gradient(linear, left top, right top, from(#4458dc), to(#854fee));
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: "";
+  z-index: -1;
+  border-radius: 4px;
 }
 
 /*--------Navigation----------*/
@@ -39,5 +113,60 @@ html, body {
 
 .header_area .main-menu .navbar-brand {
   padding: 0 2rem 0 5rem;
+}
+
+/*--------Banner----------*/
+.site-main .site-banner {
+  background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+  /*Çizgi oluşturmak için ::after kullanıldı*/
+}
+
+.site-main .site-banner .site-title h3::after {
+  content: "";
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+  font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4 {
+  font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+/*--------About Us----------*/
+.site-main .about-area {
+  padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 span {
+  display: block;
+  font: normal bold 49px/60px "Roboto", cursive;
+  letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph p {
+  padding: .4rem 0;
+}
+
+.site-main .about-area .about-title .paragraph .para {
+  color: #141313;
+  font: normal 500 16px/25px "Roboto", cursive;
 }
 /*# sourceMappingURL=style.css.map */
