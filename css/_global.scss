@@ -8,6 +8,10 @@ html,body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .title-text {
     font: normal bold 50px/72px $roboto;
 }
@@ -67,4 +71,8 @@ html,body {
         z-index: -1;
         border-radius: 4px;
     }
+}
+
+.font-roboto {
+    font-family: $roboto;
 }

@@ -100,3 +100,70 @@
         }
     }
 }
+
+/*--------Brand Area----------*/
+
+.site-main {
+    .brand-area {
+        padding: 1rem 20rem;
+        margin-bottom: 4rem;
+
+        .first-row {
+            display: flex;
+            justify-content: center;
+
+            .single-brand {
+                border: 1px solid $border-color;
+                text-align: center;
+                padding: 1.8rem 0rem;
+                margin: .9rem 0rem;
+                width: 180px;
+                height: 100px;
+                cursor: pointer;
+                transition: transform .4s ease;
+
+                &:hover {
+                    box-shadow: $box-shadow;
+                    transform: scale(1.1);
+
+                    img {
+                        filter: brightness(0.15);
+                    }
+                }
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+
+        .experience-area {
+            padding-left: 1rem;
+        }        
+
+        .years-area {
+            background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+            padding: 2rem 0;
+            width: 40rem;
+            height: 18rem;
+            padding-left: 8rem;
+            position: relative;
+
+            .years {
+                font: normal bold 84px/40px $roboto;
+                color: $primary-color;
+            }
+            h2 {                
+                span {
+                    display: block;
+                    margin-left: 1.5rem;
+                    font: normal 600 22px/30px $roboto;
+                }
+            }
+        }
+        .call-area {
+            padding-left: 8rem;
+        }
+
+    }
+}
